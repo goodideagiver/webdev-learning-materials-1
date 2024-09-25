@@ -52,10 +52,9 @@ const DonationModal = () => {
                   className='fixed left-1/2 top-1/2 z-[6000] flex max-h-[85vh] w-[90vw] max-w-3xl -translate-x-1/2 -translate-y-1/2 flex-col overflow-hidden rounded-md bg-theme-base p-6 align-baseline shadow-xl ring-1 ring-basetext/10 will-change-transform'
                 >
                   <Dialog.Title className='m-0 w-full max-w-none pb-1 text-lg font-bold text-theme-base xl:text-3xl'>
-                    We need{' '}
-                    <span className={'gradient-text font-extrabold'}>
-                      your help
-                    </span>
+                    Do{' '}
+                    <span className={'gradient-text font-extrabold'}>you</span>{' '}
+                    want to support this project?
                   </Dialog.Title>
                   <div className='relative overflow-auto'>
                     <Dialog.Description className='m-0 text-sm leading-6 text-theme-base xl:mb-6'>
