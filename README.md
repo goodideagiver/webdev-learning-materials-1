@@ -11,11 +11,11 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
-# bewebdev.tech (Web Development Learning Materials)
+# bewebdev (Web Development Learning Materials)
 
 A list of learning materials for Web Development.
 
-## <a href="https://bewebdev.tech/">Check the website here!</a>
+## <a href="https://bewebdev.purpleblack.dev/">Check the website here!</a>
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J4761UB)
 
@@ -84,6 +84,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 ## Special thanks
 
 <!-- This next line need to stay exactly as is. It is required for BrowserStack sponsorship. -->
+
 This project is tested with [BrowserStack](https://www.browserstack.com/).
 
 ## License

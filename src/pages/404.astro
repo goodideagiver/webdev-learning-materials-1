@@ -6,32 +6,43 @@ import Footer from '../components/Redesign/LandingSections/Footer/Footer.astro'
 import type { Frontmatter } from '../config'
 
 const frontmatter: Frontmatter = {
-	description: '',
-	title: '404 - Page not found | bewebdev.tech',
-	layout: '',
+  description: '',
+  title: '404 - Page not found | bewebdev',
+  layout: '',
 }
 
 const currentPage = Astro.url.pathname
 ---
 
-
-
 <head>
-	<HeadCommon />
-	<title>
-		{frontmatter.title}
-	</title>
+  <HeadCommon />
+  <title>
+    {frontmatter.title}
+  </title>
 </head>
-<div class='bg-theme-base flex min-h-screen items-center justify-center flex-col overflow-hidden'>
-	<Header currentPage={currentPage} />
-	<div class='text-center flex flex-col gap-4 relative justify-center items-center mb-32'>
-		<p class="text-lg font-bold mt-8">This page doesn't exist</p>
-		<div class="absolute w-40 h-40 bg-theme-accent-primary/50 blur-3xl left-1/2 top-0 -translate-x-1/2 -translate-y-1/2"></div>
-		<div class="absolute w-40 h-40 bg-theme-accent-secondary/50 blur-3xl left-0 top-full -translate-x-1/2 -translate-y-1/2"></div>
-		<div aria-hidden="true" class="absolute text-[180px] 3xl:text-[300px] font-extrabold left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none opacity-10">404</div>
-	</div>
-	<DocsButton href="/">
-		Go back to main page
-	</DocsButton>
+<div
+  class='bg-theme-base flex min-h-screen items-center justify-center flex-col overflow-hidden'
+>
+  <Header currentPage={currentPage} />
+  <div
+    class='text-center flex flex-col gap-4 relative justify-center items-center mb-32'
+  >
+    <p class='text-lg font-bold mt-8'>This page doesn't exist</p>
+    <div
+      class='absolute w-40 h-40 bg-theme-accent-primary/50 blur-3xl left-1/2 top-0 -translate-x-1/2 -translate-y-1/2'
+    >
+    </div>
+    <div
+      class='absolute w-40 h-40 bg-theme-accent-secondary/50 blur-3xl left-0 top-full -translate-x-1/2 -translate-y-1/2'
+    >
+    </div>
+    <div
+      aria-hidden='true'
+      class='absolute text-[180px] 3xl:text-[300px] font-extrabold left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none opacity-10'
+    >
+      404
+    </div>
+  </div>
+  <DocsButton href='/'>Go back to main page</DocsButton>
 </div>
-<Footer/>
+<Footer />

@@ -168,7 +168,7 @@ Screenshots
 
 - [Jack Herrington - React State Management – Intermediate JavaScript Course](https://www.youtube.com/watch?v=-bEzt5ISACA)
 - [Theo - ping.gg - You still use Redux? (how to pick the right state management tool?)](https://www.youtube.com/watch?v=5-1LM2NySR0)
-- [Redux - bewebdev.tech](https://bewebdev.tech/technologies/redux)
+- [Redux - bewebdev](https://bewebdev.purpleblack.dev/technologies/redux)
 - [Web Dev Simplified - learn React Query](https://www.youtube.com/watch?v=r8Dg0KVnfMA)
 - [Web Dev Simplified - learn XState (This Library Makes State Management So Much Easier)](https://www.youtube.com/watch?v=s0h34OkEVUE)
 
@@ -184,7 +184,7 @@ Screenshots
 ### React testing
 
 - [Jack Herrington - TypeScript/React Testing: Components, Hooks, Custom Hooks, Redux and Zustand](https://www.youtube.com/watch?v=bvdHVxqjv80)
-- [More about React testing in our dedicated docs section - bewebdev.tech](https://bewebdev.tech/principles/testing)
+- [More about React testing in our dedicated docs section - bewebdev](https://bewebdev.purpleblack.dev/principles/testing)
 
 ### Performance in React
 

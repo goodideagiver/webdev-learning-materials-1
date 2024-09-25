@@ -27,5 +27,5 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [modifiedTime, filePath],
   },
-  site: `https://bewebdev.tech/`,
+  site: `https://bewebdev.purpleblack.dev/`,
 })

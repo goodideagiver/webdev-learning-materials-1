@@ -8,27 +8,27 @@ import * as CONFIG from '../config'
 import Header from '../components/Header/Header.astro'
 
 export interface Props {
-	frontmatter: Frontmatter
-	canonicalUrl: URL
+  frontmatter: Frontmatter
+  canonicalUrl: URL
 }
 
 const frontmatter: Frontmatter = {
-	description: '',
-	title: 'bewebdev.tech - the best web development learning materials',
-	layout: '',
+  description: '',
+  title: 'bewebdev - the best web development learning materials',
+  layout: '',
 }
 ---
 
 <html dir={frontmatter.dir ?? 'ltr'} lang={frontmatter.lang ?? 'en'}>
-	<head>
-		<HeadCommon />
-		<LandingSEO />
-		<title>
-			{frontmatter.title ? `${frontmatter.title}` : CONFIG.SITE.title}
-		</title>
-	</head>
-	<Header currentPage='/' />
-	<LandingPage />
+  <head>
+    <HeadCommon />
+    <LandingSEO />
+    <title>
+      {frontmatter.title ? `${frontmatter.title}` : CONFIG.SITE.title}
+    </title>
+  </head>
+  <Header currentPage='/' />
+  <LandingPage />
 
 
 </html>

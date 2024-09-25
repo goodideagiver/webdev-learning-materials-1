@@ -1,11 +1,11 @@
 export const SITE = {
-  title: 'bewebdev.tech',
+  title: 'bewebdev',
   description: 'The best way to learn web development',
   defaultLanguage: 'en_US',
 }
 
 export const OPEN_GRAPH = {
-	twitter: 'bewebdev.tech',
+  twitter: 'bewebdev',
 }
 
 // This is the type of the frontmatter you put in the docs markdown files.
@@ -18,7 +18,7 @@ export type Frontmatter = {
   ogLocale?: string
   lang?: string
   filePath?: string
-  lastModified?:  string
+  lastModified?: string
 }
 
 export const GITHUB_EDIT_URL = `https://github.com/NowYouKnowProgramming/webdev-learning-materials/tree/main`
