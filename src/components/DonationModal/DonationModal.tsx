@@ -9,8 +9,8 @@ import { DonationButton } from './DonationButton'
 
 const DonationModal = () => {
   const [donationDismissed, setDonationDismissed] = usePersistedState(
-    false,
-    'donationDismissed',
+    true,
+    'donationDismissed'
   )
 
   const handleOpenChange = (isOpen: boolean) => {
@@ -65,28 +65,6 @@ const DonationModal = () => {
                       website stays accessible to everyone. Thank you for your
                       support!
                     </Dialog.Description>
-                    <h3
-                      className={
-                        'gradient-text mb-1 mt-2 p-0 text-lg font-extrabold xl:text-2xl'
-                      }
-                    >
-                      Why we need funding to keep our project alive
-                    </h3>
-                    <ol className='mb-3 list-decimal pl-5 text-sm text-theme-base xl:mb-6'>
-                      <li className='mb-1'>
-                        We need to pay for our domain $40 each year (sadly it
-                        turns out that .tech domain reneval is expensive 💔)
-                      </li>
-                      <li className='mb-1'>
-                        We plan to add features that will require backend
-                        hosting: comments inside bewebdev.tech, user feedback of
-                        invalid links and more
-                      </li>
-                    </ol>
-                    <p className='mb-4 text-sm text-theme-base'>
-                      We would be very happy if we could cover at least half of
-                      the cost of domain renewal with donations from users 💕.
-                    </p>
                     <iframe
                       id='kofiframe'
                       src='https://ko-fi.com/prplblck/?hidefeed=true&widget=true&embed=true&preview=true'
