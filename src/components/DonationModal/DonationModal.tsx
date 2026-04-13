@@ -10,7 +10,7 @@ import { DonationButton } from './DonationButton'
 const DonationModal = () => {
   const [donationDismissed, setDonationDismissed] = usePersistedState(
     true,
-    'donationDismissed'
+    'donationDismissed',
   )
 
   const handleOpenChange = (isOpen: boolean) => {
@@ -43,9 +43,9 @@ const DonationModal = () => {
               <Dialog.Content asChild key='modal'>
                 <motion.div
                   key='modal'
-                  initial={{ opacity: 0, scale: 0.8, y: '-40%', x: '-50%' }}
-                  animate={{ opacity: 1, scale: 1, y: '-50%', x: '-50%' }}
-                  exit={{ opacity: 0, scale: 0.5, y: '-40%', x: '-50%' }}
+                  initial={{ opacity: 0, y: '-45%', x: '-45%' }}
+                  animate={{ opacity: 1, y: '-50%', x: '-50%' }}
+                  exit={{ opacity: 0, y: '-50%', x: '-50%' }}
                   transition={{
                     delay: 0.1,
                   }}
@@ -58,18 +58,17 @@ const DonationModal = () => {
                   </Dialog.Title>
                   <div className='relative overflow-auto'>
                     <Dialog.Description className='m-0 text-sm leading-6 text-theme-base xl:mb-6'>
-                      Hello! If you find value in our platform, please consider
-                      making a small donation to help us cover the costs. Even a
-                      few dollars can make a big difference in ensuring our
-                      website stays accessible to everyone. Thank you for your
-                      support!
+                      If you find value in our platform, please consider making
+                      a small donation to help us cover the costs. Even a few
+                      dollars can make a big difference in ensuring our website
+                      stays accessible to everyone. Thank you for your support!
                     </Dialog.Description>
                     <iframe
                       id='kofiframe'
                       src='https://ko-fi.com/prplblck/?hidefeed=true&widget=true&embed=true&preview=true'
                       className='m-auto h-[750px] max-w-full overflow-hidden rounded-md border-none bg-[#ffffff] p-1 md:min-w-[400px]'
                       title='prplblck'
-                      loading='lazy'
+                      loading='eager'
                     ></iframe>
                   </div>
                   <Dialog.Close asChild>
